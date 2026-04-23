@@ -1,0 +1,100 @@
+openapi: 3.1.0
+info:
+  title: BELUCKS Agent API
+  version: 1.0.0
+  description: Phase 0 frozen Agent API specification
+
+paths:
+  /credits/load:
+    post:
+      summary: Load target credits and clauses
+
+  /data-units/generate:
+    post:
+      summary: Generate data units from target clauses
+
+  /evidence/bind:
+    post:
+      summary: Bind evidence objects to target data units
+
+  /agents/run:
+    post:
+      summary: Run a target agent on bound data units
+
+  /goa/tasks/create:
+    post:
+      summary: Create a GOA task
+
+  /goa/tasks/{task_id}:
+    get:
+      summary: Get GOA task status by task_id
+
+components:
+  schemas:
+    AgentRequest:
+      type: object
+      properties:
+        request_id:
+          type: string
+        project_id:
+          type: string
+        agent_type:
+          type: string
+        framework_context:
+          type: object
+        jurisdiction_bundle:
+          type: object
+        target_credit_codes:
+          type: array
+          items:
+            type: string
+        target_data_unit_ids:
+          type: array
+          items:
+            type: string
+        evidence_ids:
+          type: array
+          items:
+            type: string
+        project_stage:
+          type: string
+        run_mode:
+          type: string
+        trace_context:
+          type: object
+
+    AgentResult:
+      type: object
+      properties:
+        status:
+          type: string
+        risk_level:
+          type: string
+        reason_codes:
+          type: array
+          items:
+            type: string
+        evidence_gaps:
+          type: array
+          items:
+            type: string
+        passed_data_units:
+          type: array
+          items:
+            type: string
+        failed_data_units:
+          type: array
+          items:
+            type: string
+        conditional_data_units:
+          type: array
+          items:
+            type: string
+        explanations:
+          type: array
+          items:
+            type: string
+        provenance:
+          type: array
+          items:
+            type: string

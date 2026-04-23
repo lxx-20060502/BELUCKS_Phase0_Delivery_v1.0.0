@@ -1,0 +1,70 @@
+{
+  "pilot_code": "MAN-02-01",
+  "status": "draft",
+  "assessment_period": "2025",
+  "materials": [
+    {
+      "file_name": "committee-member-list.pdf",
+      "source_description": "Committee member list sample",
+      "visibility": "internal",
+      "related_data_unit_refs": [
+        "du-man0201-committee-exists",
+        "du-man0201-member-list-exists"
+      ]
+    },
+    {
+      "file_name": "terms-of-reference.pdf",
+      "source_description": "Terms of reference sample",
+      "visibility": "endorsed_internal",
+      "related_data_unit_refs": [
+        "du-man0201-tor-exists"
+      ]
+    },
+    {
+      "file_name": "policy-document-1.pdf",
+      "source_description": "Policy document sample 1",
+      "visibility": "internal",
+      "related_data_unit_refs": []
+    },
+    {
+      "file_name": "policy-document-2.pdf",
+      "source_description": "Policy document sample 2",
+      "visibility": "internal",
+      "related_data_unit_refs": []
+    },
+    {
+      "file_name": "policy-document-3.pdf",
+      "source_description": "Policy document sample 3",
+      "visibility": "internal",
+      "related_data_unit_refs": []
+    },
+    {
+      "file_name": "policy-document-4.pdf",
+      "source_description": "Policy document sample 4",
+      "visibility": "internal",
+      "related_data_unit_refs": []
+    },
+    {
+      "file_name": "policy-document-5.pdf",
+      "source_description": "Policy document sample 5",
+      "visibility": "internal",
+      "related_data_unit_refs": []
+    },
+    {
+      "file_name": "public-disclosure-material.pdf",
+      "source_description": "Public disclosure material sample",
+      "visibility": "public",
+      "related_data_unit_refs": [
+        "du-man0201-disclosure-channel-exists"
+      ]
+    },
+    {
+      "file_name": "endorsement-material.pdf",
+      "source_description": "Endorsement material sample",
+      "visibility": "endorsed_internal",
+      "related_data_unit_refs": [
+        "du-man0201-endorsement-present"
+      ]
+    }
+  ]
+}

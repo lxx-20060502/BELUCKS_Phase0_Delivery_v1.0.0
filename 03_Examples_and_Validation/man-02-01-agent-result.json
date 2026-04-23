@@ -1,0 +1,30 @@
+{
+  "status": "conditional",
+  "risk_level": "medium",
+  "reason_codes": [
+    "DISCLOSURE_EVIDENCE_PARTIAL",
+    "ENDORSEMENT_NEEDS_REVIEW"
+  ],
+  "evidence_gaps": [
+    "Public disclosure channel evidence is incomplete",
+    "Endorsement material requires manual confirmation"
+  ],
+  "passed_data_units": [
+    "du-man0201-committee-exists",
+    "du-man0201-member-list-exists",
+    "du-man0201-tor-exists"
+  ],
+  "failed_data_units": [],
+  "conditional_data_units": [
+    "du-man0201-disclosure-channel-exists",
+    "du-man0201-endorsement-present"
+  ],
+  "explanations": [
+    "Core governance evidence is present.",
+    "Disclosure and endorsement evidence need further confirmation."
+  ],
+  "provenance": [
+    "examples/man-02-01-agent-request.json",
+    "pilots/man-02-01/sample-evidence-checklist.md"
+  ]
+}

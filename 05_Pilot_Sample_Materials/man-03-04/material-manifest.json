@@ -1,0 +1,61 @@
+{
+  "pilot_code": "MAN-03-04",
+  "status": "draft",
+  "assessment_period": "2025",
+  "materials": [
+    {
+      "file_name": "summary-table.xlsx",
+      "source_description": "Summary table sample",
+      "visibility": "internal",
+      "related_data_unit_refs": [
+        "du-man0304-summary-table-exists"
+      ]
+    },
+    {
+      "file_name": "drawings.pdf",
+      "source_description": "Drawing set sample",
+      "visibility": "internal",
+      "related_data_unit_refs": [
+        "du-man0304-drawing-set-exists"
+      ]
+    },
+    {
+      "file_name": "report.pdf",
+      "source_description": "Report sample",
+      "visibility": "internal",
+      "related_data_unit_refs": []
+    },
+    {
+      "file_name": "system-screenshots.pdf",
+      "source_description": "System screenshots sample",
+      "visibility": "internal",
+      "related_data_unit_refs": [
+        "du-man0304-system-screenshots-exist"
+      ]
+    },
+    {
+      "file_name": "operation-practices-list.docx",
+      "source_description": "Operation practices list sample",
+      "visibility": "internal",
+      "related_data_unit_refs": [
+        "du-man0304-operation-process-documented"
+      ]
+    },
+    {
+      "file_name": "maintenance-practices-list.docx",
+      "source_description": "Maintenance practices list sample",
+      "visibility": "internal",
+      "related_data_unit_refs": [
+        "du-man0304-maintenance-process-documented"
+      ]
+    },
+    {
+      "file_name": "digitalised-om-system-description.pdf",
+      "source_description": "Digitalised operation and maintenance system description sample",
+      "visibility": "internal",
+      "related_data_unit_refs": [
+        "du-man0304-digitalised-om-description-exists"
+      ]
+    }
+  ]
+}

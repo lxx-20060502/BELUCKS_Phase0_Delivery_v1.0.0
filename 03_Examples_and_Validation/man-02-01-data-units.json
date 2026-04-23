@@ -1,0 +1,56 @@
+[
+  {
+    "data_unit_id": "du-man0201-committee-exists",
+    "framework_id": "beam-plus-eb",
+    "framework_version": "3.0",
+    "credit_code": "MAN-02-01",
+    "clause_id": "MAN-02-01-a",
+    "unit_name": "committee_exists",
+    "unit_type": "existence_check",
+    "atomic_claim": "An ESG governance committee exists.",
+    "decision_method": "document_review",
+    "required_evidence_types": [
+      "committee_record"
+    ],
+    "endorsement_required": false,
+    "public_disclosure_acceptable": false,
+    "time_window_rule": "current_reporting_period",
+    "buffer_rule": "none"
+  },
+  {
+    "data_unit_id": "du-man0201-member-list-exists",
+    "framework_id": "beam-plus-eb",
+    "framework_version": "3.0",
+    "credit_code": "MAN-02-01",
+    "clause_id": "MAN-02-01-a",
+    "unit_name": "committee_member_list_exists",
+    "unit_type": "document_existence_check",
+    "atomic_claim": "A committee member list is available.",
+    "decision_method": "document_review",
+    "required_evidence_types": [
+      "member_list"
+    ],
+    "endorsement_required": false,
+    "public_disclosure_acceptable": false,
+    "time_window_rule": "current_reporting_period",
+    "buffer_rule": "none"
+  },
+  {
+    "data_unit_id": "du-man0201-tor-exists",
+    "framework_id": "beam-plus-eb",
+    "framework_version": "3.0",
+    "credit_code": "MAN-02-01",
+    "clause_id": "MAN-02-01-a",
+    "unit_name": "terms_of_reference_exists",
+    "unit_type": "document_existence_check",
+    "atomic_claim": "Terms of reference are available.",
+    "decision_method": "document_review",
+    "required_evidence_types": [
+      "terms_of_reference"
+    ],
+    "endorsement_required": false,
+    "public_disclosure_acceptable": false,
+    "time_window_rule": "current_reporting_period",
+    "buffer_rule": "none"
+  }
+]

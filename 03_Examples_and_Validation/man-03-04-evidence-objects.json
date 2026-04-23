@@ -1,0 +1,110 @@
+[
+  {
+    "evidence_id": "ev-man0304-summary-table",
+    "project_id": "pilot-project-002",
+    "source_type": "xlsx",
+    "source_uri": "file://sample/summary-table.xlsx",
+    "file_hash": "sha256-placeholder-summary-table",
+    "captured_at": "2026-04-23T00:00:00Z",
+    "assessment_period": "2025",
+    "issuer": "project_team",
+    "visibility": "internal",
+    "endorser_role": "",
+    "extracted_text": "Summary table placeholder text.",
+    "structured_payload_ref": "examples/man-03-04-evidence-objects.json#ev-man0304-summary-table",
+    "linked_data_unit_ids": [
+      "du-man0304-summary-table-exists"
+    ],
+    "confidence_score": 0.95
+  },
+  {
+    "evidence_id": "ev-man0304-drawings",
+    "project_id": "pilot-project-002",
+    "source_type": "pdf",
+    "source_uri": "file://sample/drawings.pdf",
+    "file_hash": "sha256-placeholder-drawings",
+    "captured_at": "2026-04-23T00:01:00Z",
+    "assessment_period": "2025",
+    "issuer": "project_team",
+    "visibility": "internal",
+    "endorser_role": "",
+    "extracted_text": "Drawings placeholder text.",
+    "structured_payload_ref": "examples/man-03-04-evidence-objects.json#ev-man0304-drawings",
+    "linked_data_unit_ids": [
+      "du-man0304-drawing-set-exists"
+    ],
+    "confidence_score": 0.95
+  },
+  {
+    "evidence_id": "ev-man0304-system-screenshots",
+    "project_id": "pilot-project-002",
+    "source_type": "pdf",
+    "source_uri": "file://sample/system-screenshots.pdf",
+    "file_hash": "sha256-placeholder-system-screenshots",
+    "captured_at": "2026-04-23T00:02:00Z",
+    "assessment_period": "2025",
+    "issuer": "project_team",
+    "visibility": "internal",
+    "endorser_role": "",
+    "extracted_text": "System screenshots placeholder text.",
+    "structured_payload_ref": "examples/man-03-04-evidence-objects.json#ev-man0304-system-screenshots",
+    "linked_data_unit_ids": [
+      "du-man0304-system-screenshots-exist"
+    ],
+    "confidence_score": 0.95
+  },
+  {
+    "evidence_id": "ev-man0304-operation-practices",
+    "project_id": "pilot-project-002",
+    "source_type": "docx",
+    "source_uri": "file://sample/operation-practices-list.docx",
+    "file_hash": "sha256-placeholder-operation-practices",
+    "captured_at": "2026-04-23T00:03:00Z",
+    "assessment_period": "2025",
+    "issuer": "project_team",
+    "visibility": "internal",
+    "endorser_role": "",
+    "extracted_text": "Operation practices placeholder text.",
+    "structured_payload_ref": "examples/man-03-04-evidence-objects.json#ev-man0304-operation-practices",
+    "linked_data_unit_ids": [
+      "du-man0304-operation-process-documented"
+    ],
+    "confidence_score": 0.95
+  },
+  {
+    "evidence_id": "ev-man0304-maintenance-practices",
+    "project_id": "pilot-project-002",
+    "source_type": "docx",
+    "source_uri": "file://sample/maintenance-practices-list.docx",
+    "file_hash": "sha256-placeholder-maintenance-practices",
+    "captured_at": "2026-04-23T00:04:00Z",
+    "assessment_period": "2025",
+    "issuer": "project_team",
+    "visibility": "internal",
+    "endorser_role": "",
+    "extracted_text": "Maintenance practices placeholder text.",
+    "structured_payload_ref": "examples/man-03-04-evidence-objects.json#ev-man0304-maintenance-practices",
+    "linked_data_unit_ids": [
+      "du-man0304-maintenance-process-documented"
+    ],
+    "confidence_score": 0.95
+  },
+  {
+    "evidence_id": "ev-man0304-digitalised-om-description",
+    "project_id": "pilot-project-002",
+    "source_type": "pdf",
+    "source_uri": "file://sample/digitalised-om-system-description.pdf",
+    "file_hash": "sha256-placeholder-digitalised-om-description",
+    "captured_at": "2026-04-23T00:05:00Z",
+    "assessment_period": "2025",
+    "issuer": "project_team",
+    "visibility": "internal",
+    "endorser_role": "",
+    "extracted_text": "Digitalised operation and maintenance system description placeholder text.",
+    "structured_payload_ref": "examples/man-03-04-evidence-objects.json#ev-man0304-digitalised-om-description",
+    "linked_data_unit_ids": [
+      "du-man0304-digitalised-om-description-exists"
+    ],
+    "confidence_score": 0.95
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "task_id": "goa-task-001",
+  "project_id": "pilot-project-001",
+  "phase": "phase0",
+  "task_type": "single-agent-minimum-chain",
+  "target_credit_codes": [
+    "MAN-02-01"
+  ],
+  "workflow_name": "single-agent-workflow",
+  "steps": [
+    {
+      "step_id": "step-01",
+      "name": "select_credit",
+      "status": "defined"
+    },
+    {
+      "step_id": "step-02",
+      "name": "load_clauses",
+      "status": "defined"
+    },
+    {
+      "step_id": "step-03",
+      "name": "generate_data_units",
+      "status": "defined"
+    },
+    {
+      "step_id": "step-04",
+      "name": "bind_evidence",
+      "status": "defined"
+    },
+    {
+      "step_id": "step-05",
+      "name": "validate_evidence",
+      "status": "defined"
+    },
+    {
+      "step_id": "step-06",
+      "name": "run_l_agent",
+      "status": "defined"
+    },
+    {
+      "step_id": "step-07",
+      "name": "summarize_result",
+      "status": "defined"
+    },
+    {
+      "step_id": "step-08",
+      "name": "emit_gap_report",
+      "status": "defined"
+    }
+  ],
+  "outputs": {
+    "agent_request_ref": "examples/man-02-01-agent-request.json",
+    "agent_result_ref": "examples/man-02-01-agent-result.json",
+    "data_units_ref": "examples/man-02-01-data-units.json",
+    "evidence_ref": "examples/man-02-01-evidence-objects.json"
+  }
+}

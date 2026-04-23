@@ -1,0 +1,39 @@
+[
+  {
+    "evidence_id": "ev-man0201-committee-list",
+    "project_id": "pilot-project-001",
+    "source_type": "pdf",
+    "source_uri": "file://sample/committee-member-list.pdf",
+    "file_hash": "sha256-placeholder-committee-list",
+    "captured_at": "2026-04-22T12:00:00Z",
+    "assessment_period": "2025",
+    "issuer": "project_team",
+    "visibility": "internal",
+    "endorser_role": "",
+    "extracted_text": "Committee member list placeholder text.",
+    "structured_payload_ref": "examples/man-02-01-evidence-objects.json#ev-man0201-committee-list",
+    "linked_data_unit_ids": [
+      "du-man0201-committee-exists",
+      "du-man0201-member-list-exists"
+    ],
+    "confidence_score": 0.95
+  },
+  {
+    "evidence_id": "ev-man0201-tor",
+    "project_id": "pilot-project-001",
+    "source_type": "pdf",
+    "source_uri": "file://sample/terms-of-reference.pdf",
+    "file_hash": "sha256-placeholder-tor",
+    "captured_at": "2026-04-22T12:05:00Z",
+    "assessment_period": "2025",
+    "issuer": "project_team",
+    "visibility": "endorsed_internal",
+    "endorser_role": "management_representative",
+    "extracted_text": "Terms of reference placeholder text.",
+    "structured_payload_ref": "examples/man-02-01-evidence-objects.json#ev-man0201-tor",
+    "linked_data_unit_ids": [
+      "du-man0201-tor-exists"
+    ],
+    "confidence_score": 0.97
+  }
+]

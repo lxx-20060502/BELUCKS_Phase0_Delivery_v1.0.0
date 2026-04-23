@@ -1,0 +1,24 @@
+{
+  "schema_name": "evidence_schema",
+  "evidence_schema_version": "1.0.0",
+  "status": "frozen",
+  "description": "BELUCKS Phase 0 Evidence Schema",
+  "fields": {
+    "evidence_id": "string",
+    "project_id": "string",
+    "source_type": "string",
+    "source_uri": "string",
+    "file_hash": "string",
+    "captured_at": "string",
+    "assessment_period": "string",
+    "issuer": "string",
+    "visibility": "string",
+    "endorser_role": "string",
+    "extracted_text": "string",
+    "structured_payload_ref": "string",
+    "linked_data_unit_ids": [
+      "string"
+    ],
+    "confidence_score": "number"
+  }
+}

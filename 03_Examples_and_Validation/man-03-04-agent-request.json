@@ -1,0 +1,39 @@
+{
+  "request_id": "req-man-03-04-001",
+  "project_id": "pilot-project-002",
+  "agent_type": "l-agent",
+  "framework_context": {
+    "framework_id": "beam-plus-eb",
+    "framework_version": "3.0",
+    "category_code": "MAN"
+  },
+  "jurisdiction_bundle": {
+    "region": "Hong Kong",
+    "scheme": "BEAM Plus Existing Buildings"
+  },
+  "target_credit_codes": [
+    "MAN-03-04"
+  ],
+  "target_data_unit_ids": [
+    "du-man0304-summary-table-exists",
+    "du-man0304-drawing-set-exists",
+    "du-man0304-system-screenshots-exist",
+    "du-man0304-operation-process-documented",
+    "du-man0304-maintenance-process-documented",
+    "du-man0304-digitalised-om-description-exists"
+  ],
+  "evidence_ids": [
+    "ev-man0304-summary-table",
+    "ev-man0304-drawings",
+    "ev-man0304-system-screenshots",
+    "ev-man0304-operation-practices",
+    "ev-man0304-maintenance-practices",
+    "ev-man0304-digitalised-om-description"
+  ],
+  "project_stage": "phase0_pilot",
+  "run_mode": "evaluate",
+  "trace_context": {
+    "workflow_name": "single-agent-workflow",
+    "source": "example"
+  }
+}

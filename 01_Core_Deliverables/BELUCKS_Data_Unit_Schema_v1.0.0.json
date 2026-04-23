@@ -1,0 +1,61 @@
+{
+  "schema_name": "data_unit_schema",
+  "data_unit_schema_version": "1.0.0",
+  "status": "frozen",
+  "description": "BELUCKS Phase 0 Data Unit Schema",
+  "fields": {
+    "identification": {
+      "data_unit_id": "string",
+      "framework_id": "string",
+      "framework_version": "string",
+      "credit_code": "string",
+      "clause_id": "string",
+      "unit_name": "string",
+      "unit_type": "string"
+    },
+    "rules": {
+      "atomic_claim": "string",
+      "decision_method": "string",
+      "required_evidence_types": [
+        "string"
+      ],
+      "endorsement_required": "boolean",
+      "public_disclosure_acceptable": "boolean",
+      "time_window_rule": "string",
+      "buffer_rule": "string"
+    },
+    "tags": {
+      "discipline": "string",
+      "jurisdiction": "string",
+      "time_scope": "string",
+      "confidence": "number"
+    },
+    "multimodal": {
+      "source_modality": "string",
+      "document_ref": "string",
+      "bim_ref": "string",
+      "tabular_ref": "string",
+      "api_ref": "string",
+      "manual_input_ref": "string",
+      "geometry_ref": "string",
+      "timeseries_ref": "string"
+    },
+    "conflict_reservation": {
+      "conflict_group_id": "string",
+      "project_stage": "string",
+      "priority_weight": "number",
+      "agent_visibility": [
+        "string"
+      ]
+    },
+    "external_mapping_reservation": {
+      "mapping_targets": [
+        {
+          "external_scheme": "string",
+          "external_credit": "string",
+          "mapping_confidence": "number"
+        }
+      ]
+    }
+  }
+}
