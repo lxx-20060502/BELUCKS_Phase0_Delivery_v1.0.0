@@ -1,0 +1,34 @@
+#输入：
+
+请基于 ~/.openclaw/workspace/runtime-bridge/single-agent-workflow 里的 single-agent-workflow.config.json 和 single-agent-workflow.md，把这个 workflow 渲染成一个按顺序展开的步骤清单，并告诉我一共有几步。
+
+
+
+
+
+#输出：
+
+**single‑agent‑workflow**（位于 `~/.openclaw/workspace/runtime-materialized/single-agent-workflow`）的步骤清单如下，顺序即 `single-agent-workflow.config.json` 中列出的 `steps` 数组所定义的执行顺序：
+
+| 步骤序号 | 步骤名称 | 简要说明 |
+|----------|----------|----------|
+| 1 | **select_credit** | 选取并准备需要的信用/凭证信息（如任务链、代理请求等）作为后续处理的入口。 |
+| 2 | **load_clauses** | 读取并解析工作流所需的条款/规格文件（`goa‑minimum‑task‑chain.json`、`man‑02‑01‑agent‑request.json` 等），把它们加载进运行时环境。 |
+| 3 | **generate_data_units** | 根据已加载的条款生成数据单元（Data Units），为证据绑定提供结构化输入。 |
+| 4 | **bind_evidence** | 将生成的数据单元与相应的证据对象（Evidence Objects）关联，形成完整的证据链。 |
+| 5 | **validate_evidence** | 对绑定后的证据进行完整性与合规性校验，确保满足 MAN‑02‑01 等规范要求。 |
+| 6 | **run_l_agent** | 调用 **L‑Agent**（在此阶段的单代理实现）执行实际业务逻辑，利用前面的证据和数据单元产生结果。 |
+| 7 | **summarize_result** | 对 L‑Agent 的输出进行摘要、整理，生成可供后续使用的结果报告。 |
+| 8 | **emit_gap_report** | 生成并输出 **gap report**，指出规范或实现中仍存在的缺口，以便后续迭代改进。 |
+
+**总步数**：**8 步**  
+
+这些步骤对应的具体文件（示例路径）在 `bindings` 中已映射：
+
+- `goa_task_chain_ref` → `examples/goa-minimum-task-chain.json`  
+- `agent_request_ref` → `examples/man-02-01-agent-request.json`  
+- `agent_result_ref` → `examples/man-02-01-agent-result.json`  
+- `data_units_ref` → `examples/man-02-01-data-units.json`  
+- `evidence_ref` → `examples/man-02-01-evidence-objects.json`
+
+这就是该 workflow 的完整、按顺序展开的执行清单以及步骤总数。祝使用顺利！

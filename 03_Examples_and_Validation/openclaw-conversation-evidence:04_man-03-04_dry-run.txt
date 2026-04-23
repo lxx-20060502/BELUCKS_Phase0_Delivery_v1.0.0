@@ -1,0 +1,34 @@
+#输入：
+
+请读取 ~/.openclaw/workspace/runtime-materialized/single-agent-workflow 里的 man-03-04-agent-request.json、man-03-04-data-units.json、man-03-04-evidence-objects.json，然后按 single-agent-workflow 的顺序，对 MAN-03-04 做一次 dry-run，并输出：1) 最终状态 2) passed_data_units 3) conditional_data_units 4) evidence_gaps。
+
+
+
+
+
+
+
+
+#输出：
+
+**MAN‑03‑04 dry‑run (single‑agent‑workflow) – results**
+
+| 项目 | 结果 |
+|------|------|
+| **最终状态** | **SUCCESS** – 所有在 `man‑03‑04‑data‑units.json` 中声明的数据单元均找到了对应的证据，验证通过，未发现缺口。 |
+| **passed_data_units** (已满足的 Data Unit ID) | `du-man0304-summary-table-exists`、`du-man0304-drawing-set-exists`、`du-man0304-system-screenshots-exist`、`du-man0304-operation-process-documented`、`du-man0304-maintenance-process-documented`、`du-man0304-digitalised-om-description-exists` |
+| **conditional_data_units** (需要额外条件才算通过的 Data Unit) | *无* – 本示例中未定义 “conditional” 或 “only‑if‑certain‑conditions‑met” 的单元。 |
+| **evidence_gaps** (缺失的证据) | *无* – 每个 Data Unit 都有至少一条对应的 Evidence Object（`ev‑man0304‑summary-table`、`ev‑man0304‑drawings`、`ev‑man0304‑system-screenshots`、`ev‑man0304‑operation-practices`、`ev‑man0304‑maintenance-practices`、`ev‑man0304‑digitalised-om-description`）通过 `linked_data_unit_ids` 关联。 |
+
+**简要验证过程（依据 `single-agent-workflow` 的步骤）**
+
+1. **select_credit** – 选取 `MAN‑03‑04`。  
+2. **load_clauses** – 读取 `man‑03‑04‑data‑units.json` 与 `man‑03‑04‑evidence‑objects.json`。  
+3. **generate_data_units** – 生成 6 条数据单元（如 `du‑man0304‑summary-table-exists` 等）。  
+4. **bind_evidence** – 将每条证据对象通过 `linked_data_unit_ids` 绑定到相应的数据单元。  
+5. **validate_evidence** – 检查每个数据单元的 `required_evidence_types` 是否在其绑定的证据中出现；全部匹配，置信度均在 0.95 以上。  
+6. **run_l_agent** – 在 dry‑run 中跳过实际业务执行，仅做验证。  
+7. **summarize_result** – 汇总通过的单元列表。  
+8. **emit_gap_report** – 生成缺口报告（本次为空）。  
+
+**结论**：MAN‑03‑04 在当前单代理工作流的 dry‑run 中全部通过，没有未满足的数据单元或证据缺口，可视为一次成功的运行验证。
